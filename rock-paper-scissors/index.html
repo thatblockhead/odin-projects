@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./scripts.js"></script>
+    <script src="./scripts.js" defer></script>
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <button onclick={game()}>Test</button>
+    <h2>Play</h2>
+    <button onclick={playSingleRound(this.value)} value="rock">Rock</button>
+    <button onclick={playSingleRound(this.value)} value="paper">Paper</button>
+    <button onclick={playSingleRound(this.value)} value="scissors">Scissors</button>
+    <p id="matchResult"></p>
+    <p id="userScore"></p>
+    <p id="computerScore"></p>
+    <h3 id="gameResult"></h3>
+    <div id="reset"></div>
 </body>
 </html>
