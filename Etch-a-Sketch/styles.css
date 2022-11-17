@@ -22,12 +22,11 @@ body {
 }
 
 .item {
-    padding: 5px;
     background-color: wheat;
 }
 
 .button {
-    margin-top: 5em;
+    margin-top: 3em;
     padding: 1.5em;
     border-radius: 8px;
 }
