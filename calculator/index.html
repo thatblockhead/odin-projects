@@ -5,88 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="./scripts.js" defer></script>
     <title>Calculator</title>
 </head>
-<body>
+<body onload="startTime(), setDate()">
     <div class="top-band">hi</div>
     <div class="container">
         <div class="watch-face">
         <div class="top">
-            <div class="brand">Calculo</div>
+            <div class="brand">CALCULO</div>
             <div class="display">
                 <div id="LCD-top">
-                    <div id="time">Time</div>
-                    <div id="date">Date</div>
+                    <div id="time"></div>
+                    <div id="date"></div>
                 </div>
-                <div id="LCD-bottom">
-                    <input id="calc" type="text" value="Hi" readonly>
-                </div>
+                <div id="preview" type="text" contenteditable="true"></div>
+                <div id="calc" type="text" contenteditable="true"></div>
             </div>
         </div>
         <div class="bottom">
             <div class="grid-item">
-                <div id="7" class="number">7</div>
-                <div class="button-div"><button class="button"></button></div>
+                <div class="number">7</div>
+                <div class="button-div"><button id="7" class="button number-button"></button></div>
             </div>
             <div class="grid-item">
-                <div id="8" class="number">8</div>
-                <div class="button-div"><button class="button"></button></div>
+                <div class="number">8</div>
+                <div class="button-div"><button id="8" class="button number-button"></button></div>
             </div>
             <div class="grid-item">
-                <div id="9" class="number">9</div>
-                <div class="button-div"><button class="button"></button></div>
+                <div class="number">9</div>
+                <div class="button-div"><button id="9" class="button number-button"></button></div>
             </div>
             <div class="grid-item">
-                <div id="/" class="operator">÷</div>
-                <div class="button-div"><button class="button"></button></div>
+                <div class="operator">÷</div>
+                <div class="button-div"><button id="/" class="button operator-button"></button></div>
             </div>
             <div class="grid-item">
-                <div id="4" class="number">4</div>
-                <div class="button-div"><button class="button"></button></div>
+                <div class="number">4</div>
+                <div class="button-div"><button id="4" class="button number-button"></button></div>
             </div>
             <div class="grid-item">
-                <div id="5" class="number">5</div>
-                <div class="button-div"><button class="button"></button></div>
+                <div class="number">5</div>
+                <div class="button-div"><button id="5" class="button number-button"></button></div>
             </div>
             <div class="grid-item">
-                <div id="6" class="number">6</div>
-                <div class="button-div"><button class="button"></button></div>
+                <div class="number">6</div>
+                <div class="button-div"><button id="6" class="button number-button"></button></div>
             </div>
             <div class="grid-item">
-                <div id="*" class="operator">×</div>
-                <div class="button-div"><button class="button"></button></div>
+                <div class="operator">×</div>
+                <div class="button-div"><button id="*" class="button operator-button"></button></div>
             </div>
             <div class="grid-item">
-                <div id="1" class="number">1</div>
-                <div class="button-div"><button class="button"></button></div>
+                <div class="number">1</div>
+                <div class="button-div"><button id="1" class="button number-button"></button></div>
             </div>
             <div class="grid-item">
-                <div id="2" class="number">2</div>
-                <div class="button-div"><button class="button"></button></div>
+                <div class="number">2</div>
+                <div class="button-div"><button id="2" class="button number-button"></button></div>
             </div>
             <div class="grid-item">
-                <div id="3" class="number">3</div>
-                <div class="button-div"><button class="button"></button></div>
+                <div class="number">3</div>
+                <div class="button-div"><button id="3" class="button number-button"></button></div>
             </div>
             <div class="grid-item">
-                <div id="-" class="operator">-</div>
-                <div class="button-div"><button class="button"></button></div>
+                <div class="operator">-</div>
+                <div class="button-div"><button id="-" class="button operator-button"></button></div>
             </div>
             <div class="grid-item">
-                <div id="0" class="number">0</div>
-                <div class="button-div"><button class="button"></button></div>
+                <div class="number">0</div>
+                <div class="button-div"><button id="0" class="button number-button"></button></div>
             </div>
             <div class="grid-item">
-                <div id="clear" class="number">C</div>
-                <div class="button-div"><button class="button"></button></div>
+                <div class="number">C</div>
+                <div class="button-div"><button id="clear" class="button"></button></div>
             </div>
             <div class="grid-item">
-                <div id="=" class="operator">=</div>
-                <div class="button-div"><button class="button"></button></div>
+                <div class="operator">=</div>
+                <div class="button-div"><button id="=" class="button equals-button"></button></div>
             </div>
             <div class="grid-item">
-                <div id="+" class="operator">+</div>
-                <div class="button-div"><button class="button"></button></div>
+                <div class="operator">+</div>
+                <div class="button-div"><button id="+" class="button operator-button"></button></div>
             </div>
         </div>
     </div>
