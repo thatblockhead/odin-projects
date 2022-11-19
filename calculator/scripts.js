@@ -52,7 +52,7 @@ function operate(operator, x, y) {
     }
 }
 
-// Event listener for button presses
+// The elements of the DOM we'll need to modify
 const buttonGrid = document.querySelector('.bottom')
 const calculatorDisplay = document.getElementById('calc')
 const previewDisplay = document.getElementById('preview')
@@ -69,6 +69,7 @@ let op = ""
 const updateCalculatorDisplay = (v) => calculatorDisplay.textContent = v
 const updatePreviewDisplay = (v) => previewDisplay.textContent = v
 
+// We can use event delegation to listen to all buttons with a single event listener on the parent element
 buttonGrid.addEventListener('click', function(e) {
     if (e.target.classList.contains('button')) {
         
