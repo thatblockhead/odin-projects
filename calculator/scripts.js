@@ -73,13 +73,8 @@ const updatePreviewDisplay = (v) => previewDisplay.textContent = v
 buttonGrid.addEventListener('click', function(e) {
     if (e.target.classList.contains('button')) {
         
-        // Clear everything if 'clear' button is pressed
         if (e.target.id === "clear") {
-            x = ""
-            y = ""
-            op = ""
-            updateCalculatorDisplay('')
-            updatePreviewDisplay('')
+            clear()
         }
 
         // Handle number input
@@ -155,9 +150,18 @@ buttonGrid.addEventListener('click', function(e) {
             }
         }
     }
-}) 
+})
+
+function clear() {
+    x = ""
+    y = ""
+    op = ""
+    updateCalculatorDisplay("")
+    updatePreviewDisplay("")
+}
 
 function throwError() {
     updatePreviewDisplay("NICE TRY")
     updateCalculatorDisplay("NOPE")
+    setTimeout(() => clear(), 2000)
 }
