@@ -22,7 +22,6 @@ function setDate() {
     dateDisplay.textContent = dateFormatted
 }
 
-
 // Calculator functions
 function add(x,  y) {
     return parseFloat((x + y).toFixed(3))
@@ -154,9 +153,6 @@ buttonGrid.addEventListener('click', function(e) {
                 }
             }
         }
-
-        
-        
     }
 }) 
 

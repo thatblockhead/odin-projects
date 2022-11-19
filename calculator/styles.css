@@ -11,6 +11,10 @@ body {
     flex-direction: column;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     align-items: center;
+    background-image: url('./img/4266183_17015.jpg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 120%;
 }
 
 @media screen and (min-width: 601px) {
@@ -46,6 +50,10 @@ body {
 
     #LCD-top {
         font-size: 1.3em;
+    }
+
+    footer {
+        font-size: x-small;
     }
 }
 
@@ -102,7 +110,7 @@ body {
 
 @font-face {
     font-family: 'digital-7-mono';
-    src: url('./digital-7.mono.ttf');
+    src: url('./fonts/digital-7.mono.ttf');
 }
 
 .display {
@@ -210,4 +218,11 @@ body {
     color: firebrick;
     font-size: xx-large;
     font-weight: 1000;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
 }
