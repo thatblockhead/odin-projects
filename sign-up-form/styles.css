@@ -1,0 +1,66 @@
+* {
+    /* border: 1px solid hotpink; */
+}
+
+html {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.left-hero {
+    height: 100vh;
+    width: min(40vw, 1080px);
+    background-image: url('./img/saiph-muhammad-CSs8aiN_LkI-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+.transparent-banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    top: 30vh;
+    height: 10vh;
+    color: white;
+    font-size: clamp(1rem, 5vw, 3vh);
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.transparent-banner > img {
+    height: 9vh;
+}
+
+.left-hero > p {
+    position: fixed;
+    width: min(40vw, 1080px);
+    bottom: 0;
+    margin: 0;
+    overflow-wrap: normal;
+    color: white;
+}
+
+p > a {
+    color: ghostwhite;
+}
+
+.right-form {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(240, 240, 240);
+}
+
+.right-middle {
+    background-color: white;
+    height: 22vh;
+}
