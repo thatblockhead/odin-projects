@@ -1,5 +1,6 @@
 * {
     /* border: 1px solid hotpink; */
+    box-sizing: border-box;
 }
 
 html {
@@ -28,15 +29,15 @@ body {
     align-items: center;
     justify-content: center;
     gap: 2vw;
-    top: 30vh;
-    height: 10vh;
+    top: 29vh;
+    height: 12vh;
     color: white;
     font-size: clamp(1rem, 5vw, 3vh);
     background-color: rgba(0, 0, 0, 0.5)
 }
 
 .transparent-banner > img {
-    height: 9vh;
+    height: 10vh;
 }
 
 .left-hero > p {
@@ -52,7 +53,7 @@ p > a {
     color: ghostwhite;
 }
 
-.right-form {
+.right-side {
     width: 60vw;
     display: flex;
     flex-direction: column;
@@ -60,7 +61,84 @@ p > a {
     background-color: rgb(240, 240, 240);
 }
 
+.right-heading {
+    padding: 2rem;
+}
+
+
 .right-middle {
     background-color: white;
-    height: 22vh;
+    min-height: 22vh;
+    display: flex;
+    flex-flow: row wrap;
+    flex: 3 1 auto;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.right-middle > div {
+    width: 40%;
+}
+
+.input-title {
+    width: 100%;
+}
+
+label {
+    display: block;
+}
+
+input {
+    width: 80%;
+    min-width: 220px;
+    padding: 0.5rem;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+input:required {
+    border-color: lightgrey;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid slateblue;
+    box-shadow: 2px 2px 2px lightgrey;
+}
+
+input:not(:focus):invalid {
+    border: 1px solid crimson;
+}
+
+input:not(:focus):not(:placeholder-shown):valid {
+    border: 1px solid seagreen;
+}
+
+.error-message {
+    font-size: small;
+    font-weight: 700;
+    color: crimson;
+    display: none;
+}
+
+input:not(:focus):invalid ~ .error-message {
+    display: block;
+}
+
+.create-account-btn {
+    padding: 1rem;
+    font-size: large;
+    border:2px solid deeppink;
+    color: deeppink;
+    border-radius: 0.7rem;
+}
+
+.create-account-btn:hover {
+    color: white;
+    background-color: deeppink;
+    transition: 0.2s;
+}
+
+.right-footer {
+    padding: 2rem;
 }

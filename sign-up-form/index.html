@@ -1,49 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <style>
-       @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
     </style>
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="left-hero">
-        <div class="transparent-banner">
-            <img src="./img/odin-lined.png" alt="Odin">
-            <h1>Wow</h1>
-        </div>
-        <p>Photo by <a href="https://unsplash.com/@saiph?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Saiph Muhammad</a> on <a href="https://unsplash.com/s/photos/beach?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+      <div class="transparent-banner">
+        <img src="./img/odin-lined.png" alt="Odin" />
+        <h1>Wow</h1>
+      </div>
+      <p>
+        Photo by
+        <a
+          href="https://unsplash.com/@saiph?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Saiph Muhammad</a
+        >
+        on
+        <a
+          href="https://unsplash.com/s/photos/beach?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Unsplash</a
+        >
+      </p>
     </div>
-    <div class="right-form">
-        <div class="right-heading">
-            <h2>Life's a beach. Sign up for this imaginary thing. The pretty colors and palm trees are pretty tempting, aren't they?</h2>
-            <h2>You know you want to.</h2>
+    <div class="right-side">
+      <div class="right-heading">
+        <h2>
+          Life's a beach. Sign up for this imaginary thing. The pretty colors
+          and palm trees are <em>pretty</em> tempting, aren't they?
+        </h2>
+        <h2>You <em>know</em> you want to.</h2>
+      </div>
+      <form action="fake.com/submit" method="post">
+      <div class="right-middle">
+        <h2 class="input-title">Let's do this!</h2>
+        <div>
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" placeholder=" "/>
         </div>
-        <div class="right-middle">
-            <h2>Let's do this!</h2>
-            <form action="fake.com/submit" method="post">
-                <label for="first-name">First Name</label>
-                <input type="text" id="first-name" name="first-name">
-                <label for="last-name">Last Name</label>
-                <input type="text" id="last-name" name="last-name">
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email">
-                <label for="phone-number">Phone Number</label>
-                <input type="text" id="phone-number" name="phone-number">
-                <label for="password">Password</label>
-                <input type="text" id="password" name="password">
-                <label for="confirm-password">Confirm Password</label>
-                <input type="text" id="confirm-password" name="confirm-password">
-            </form>
+        <div>
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" placeholder=" "/>
         </div>
-        <div class="right-footer">
-            <button class="create-account-btn">Create Account</button>
-            <h3>Already have an account? <a href="/login">Log in</a></h3>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder=" "/>
+            <p class="error-message">Please enter a valid email address</p>
         </div>
+        <div>
+            <label for="phone-number">Phone Number</label>
+            <input type="text" id="phone-number" name="phone-number" placeholder=" "/>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder=" "/>
+        </div>
+        <div>
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder=" "/>
+        </div>
+      </div>
+      <div class="right-footer">
+        <button class="create-account-btn">Create Account</button>
+        <h3>Already have an account? <a href="/login">Log in</a></h3>
+      </div>
+    </form>
     </div>
-</body>
+  </body>
 </html>
